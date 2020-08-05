@@ -1,0 +1,731 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background: url("img/bckgrnd.jpg");
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+@keyframes fadein{
+    from{
+        top: 200px;
+        opacity: 0;
+    }
+    to{
+        top: 180px;
+        opacity: 1;
+    }
+}
+
+img[id="showpass"]{
+    width: 15px;
+    height: 10px;
+    /* float: right; */
+}
+
+.gif{
+    width: 20px; 
+    height: 20px; 
+    display: none;
+}
+
+/* ------------------------------------------------------- LOGIN PAGE------------------------ -------------------------------------------- */
+
+.loginpage .loginbox{
+    position: absolute;
+    top: 180px;
+    left: 500px;
+    width: 350px;
+    height: 370px;
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    padding: 20px 40px;
+    animation: fadein 2s;
+}
+
+.loginpage .loginbox h2{
+    margin: 0;
+    padding: 0 0 10px;
+    color: rgb(255, 206, 44);
+    text-align: center;
+}
+
+.loginpage .loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: white;
+}
+
+.loginpage .loginbox input{
+width: 200px;
+border: none;
+height: 20px;
+background: transparent;
+outline: none;
+color: white;
+font-size: 14px;
+}
+
+.loginpage .loginbox .under img{
+    margin: 0;
+    padding-top: 10px;
+    margin-right: 5px;
+    width: 15px;
+    height: 20px;
+}
+
+.loginpage .loginbox .under img[id="showpass"]{
+    margin-top: 10px;
+    width: 15px;
+    height: 8px;
+    float: right;
+}
+
+.loginpage .loginbox .under{
+    width: 100%;
+    border-bottom: 1px solid white;
+    margin-bottom: 20px;
+}
+
+.loginpage .loginbox button[id="login"]{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 5px;
+    border: none;
+    outline: none;
+    background-color: rgb(117, 49, 243);
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: bisque;
+}
+
+.loginpage .loginbox button[id="login"]:hover{
+    background-color: rgb(214, 36, 199);
+    color: aqua;
+}
+
+.loginpage .loginbox a{
+    text-decoration: none;
+    color: rgb(255, 206, 44);
+}
+
+.loginpage .loginbox a:hover{
+    color: rgb(199, 255, 44);
+}
+
+.loginpage .loginbox ::placeholder{
+    color: rgba(255, 255, 255, .6);
+}
+
+.loginpage .linkregist{
+    font-size: 13px;
+}
+
+.loginpage .linkforgot{
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+}
+
+.loginpage .loginbox .remem{
+    width: 100%;
+    height: 30px;
+    font-weight: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+}
+
+.loginpage .loginbox .remem input{
+    width: 15px;
+    height: 15px;
+}
+
+/* ----------------------------------------------------- REGISTER PAGE -------------------------------------------------------------------- */
+
+.registpage .registbox{
+    position: absolute;
+    top: 180px;
+    left: 200px;
+    width: 980px;
+    height: 300px;
+    background: rgb(255, 255, 255);
+    box-sizing: border-box;
+    padding: 20px 40px;
+    border-radius: 10px;
+    animation: fadein 2s;
+}
+
+.registpage .registbox .keyword{
+    margin: 0;
+    width: 150px;
+    height: 300px;
+    float: left;
+    padding: 0;
+}
+
+.registpage .registbox .inputuser{
+    margin: 0;
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin-top: 13px;
+}
+
+.registpage .registbox .keyword p{
+    font-weight: bold;
+    font-size: 13px;
+    text-align: right;
+    height: 35px;
+    line-height: 35px;
+    margin-bottom: 23px;
+}
+
+.registpage .registbox .inputuser input{
+    margin-left: 10px;
+    width: 250px;
+    height: 30px;
+    margin-bottom: 22px;
+    outline: none;
+}
+
+.registpage .registbox .inputuser img[id="showpass"]{
+    position: absolute;
+    z-index: 1;
+    margin-top: 11px;
+}
+
+.registpage .registbox .inputuser .boxinputuser{
+    position: absolute;
+    left: 420px;
+    margin-left: 10px;
+    width: 26px;
+    height: 33px;
+    margin-bottom: 22px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    z-index: 0;
+    border-left: none;
+}
+
+.registpage .registbox .inputuser input[id="passwd"],.registpage .registbox .inputuser input[id="repasswd"]{
+    margin-left: 10px;
+    width: 225px;
+    height: 31px;
+    margin-bottom: 22px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-right: none;
+}
+
+.registpage .registbox .term{
+    margin-left: 50px;
+    margin-top: 20px;
+    float: left;
+    height: 30px;
+    line-height: 15px;
+    font-size: 13px;
+}
+
+.registpage .registbox .term input{
+    margin-top: 5px;
+    width: 15px;
+    height: 15px;
+}
+
+.registpage .registbox .term a{
+    color: blue;
+}
+
+.registpage .registbox .term button{
+    width: 40%;
+    height: 30px;
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    background-color: rgb(117, 49, 243);
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(244, 255, 88);
+}
+
+.registpage .registbox .term button:hover{
+    background-color: rgb(250, 217, 33);
+    color: rgb(6, 36, 170);
+}
+
+/* --------------------------------------------------- INDEX PAGE ------------------------------------------------------------------- */
+
+.indexpage .uptopindex{
+    position: fixed;
+    width: 100%;
+    height: 45px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(26, 26, 26);
+    color: white;
+    z-index: 999;
+}
+
+.indexpage .uptopindex .searchpart{
+    float: right;
+    margin-right: 20px;
+    width: 200px;
+    height: 45px;
+}
+
+.indexpage .uptopindex .searchpart input{
+    width: 160px;
+    height: 22px;
+    margin-top: 8px;
+    outline: none;
+}
+
+.indexpage .uptopindex .searchpart button{
+    background: transparent;
+    outline: hidden;
+    border: none;
+}
+
+.indexpage .uptopindex img{
+    margin-top: 8px;
+    margin-left: 100px;
+}
+
+.indexpage .downtopindex{
+    position: fixed;
+    width: 100%;
+    height: 2px;
+    top: 45px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 0, 221);
+    z-index: 999;
+}
+
+.indexpage .indexbox{
+    position: absolute;
+    margin: 0;
+    top: 65px;
+    left: 70px;
+    width: 1200px;
+    height: 1000px;
+    box-sizing: border-box;
+}
+
+.indexpage .indexbox .header{
+    margin-bottom: 20px;
+}
+
+.indexpage .indexbox .header img{
+    margin-left: 20px;
+}
+
+.indexpage .indexbox .recomended{
+    background-color: rgb(255, 103, 235);
+    color: white;
+    width: 100px;
+    height: 40px;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    font-size: 12px;
+    font-weight: bold;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.indexpage .indexbox .recomendedcontent{
+    color: white;
+    float: left;
+    background-color: rgb(26, 26, 26);
+    width: 1090px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    font-size: 12px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.indexpage .indexbox .content{
+    background-color: rgb(58, 58, 58);
+    width: 900px;
+    height: 700px;
+    border-radius: 5px;
+    float: left;
+    margin-right: 10px;
+}
+
+.indexpage .indexbox .content .tablecontent{
+    width: 852px;
+    height: 500px;
+    overflow: auto;
+    margin-left: 15px;
+    margin-top: 40px;
+    border-bottom: 2px solid rgb(255, 0, 221);
+}
+
+.indexpage .indexbox .content .table-index{
+    border-collapse: collapse;
+    font-size: 15px;
+}
+
+.indexpage .indexbox .content .table-index th{
+    background-color: rgb(255, 0, 221);
+    padding: 10px;
+}
+
+.indexpage .indexbox .content .table-index tr{
+    border-bottom: 1px solid rgb(248, 191, 240);
+    background-color: white;
+}
+
+.indexpage .indexbox .content .table-index tr:nth-of-type(even){
+    background-color: rgb(247, 141, 233);
+}
+
+.indexpage .indexbox .content .table-index tr:last-of-type{
+    border-bottom: 4px solid rgb(255, 0, 221);
+}
+
+.indexpage .indexbox .content .table-index th,
+.indexpage .indexbox .content .table-index td{
+    padding: 12px 15px;
+}
+
+.indexpage .indexbox .content .table-index .indexnumbertable{
+    text-align: center;
+    padding: 10px 5px;
+    width: 25px;
+}
+
+.indexpage .indexbox .content .headercontent{
+    background-color: rgb(26, 26, 26);
+    width: 98%;
+    height: 40px;
+    line-height: 40px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: white;
+    padding-left: 2%;
+    font-size: 13px;
+}
+
+.indexpage .indexbox .content button[id="addproduct"]{
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 150px;
+    height: 30px;
+    background-color: rgb(0, 102, 255);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.indexpage .indexbox .content button[id="addproduct"]:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 102, 255);
+}
+
+.indexpage .indexbox .content button[id="logout"]{
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 150px;
+    height: 30px;
+    background-color: rgb(192, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.indexpage .indexbox .content button[id="logout"]:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0)
+}
+
+.indexpage .indexbox .content .table-index a{
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    margin: 5px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.indexpage .indexbox .content a[id="act1"]{
+    background-color: rgb(11, 20, 143);
+}
+
+.indexpage .indexbox .content a[id="act2"]{
+    background-color: rgb(192, 13, 13);
+}
+
+.indexpage .indexbox .content a[id="act1"]:hover{
+    background-color: rgb(67, 79, 243);
+}
+
+.indexpage .indexbox .content a[id="act2"]:hover{
+    background-color: rgb(252, 53, 53);
+}
+
+.indexpage .indexbox .sidecontent{
+    height: 700px;
+    width: 290px;
+    background-color: rgb(58, 58, 58);
+    border-radius: 5px;
+    float: left;
+}
+
+.indexpage .indexbox .sidecontent .headersidecontent{
+    background-color: rgb(26, 26, 26);
+    width: 98%;
+    height: 40px;
+    line-height: 40px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: white;
+    padding-left: 2%;
+    font-size: 13px;
+}
+
+.indexpage .indexbox .footer{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 100px;
+    width: 1200px;
+    background-color: rgb(58, 58, 58);
+    border-radius: 5px;
+    float: left;
+}
+
+.indexpage .indexbox .footer .headerfooter{
+    background-color: rgb(26, 26, 26);
+    width: 98%;
+    height: 40px;
+    line-height: 40px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: white;
+    padding-left: 2%;
+    font-size: 13px;
+}
+
+/* --------------------------------------------------- ADD PAGE ------------------------------------------------------------------- */
+
+.addpage .addbox{
+    position: absolute;
+    top: 120px;
+    left: 200px;
+    width: 980px;
+    height: 430px;
+    background: rgb(255, 255, 255);
+    box-sizing: border-box;
+    padding: 20px 40px;
+    border-radius: 10px;
+    animation: fadeinadd 2s;
+}
+
+@keyframes fadeinadd{
+    from{
+        top: 140px;
+        opacity: 0;
+    }
+    to{
+        top: 120px;
+        opacity: 1;
+    }
+}
+
+.addpage .addbox .keyword{
+    margin: 0;
+    width: 150px;
+    height: 300px;
+    float: left;
+    padding: 0;
+}
+
+.addpage .addbox .inputuser{
+    margin: 0;
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin-top: 13px;
+}
+
+.addpage .addbox .inputuser input{
+    margin-left: 10px;
+    width: 250px;
+    height: 30px;
+    margin-bottom: 22px;
+    outline: none;
+}
+
+.addpage .addbox .keyword p{
+    font-weight: bold;
+    font-size: 13px;
+    text-align: right;
+    height: 35px;
+    line-height: 35px;
+    margin-bottom: 23px;
+}
+
+.addpage .addbox .inputuser label{
+    margin-left: 10px;
+}
+
+.addpage .addbox .inputuser input[id="day"],.addpage .addbox .inputuser input[id="month"],.addpage .addbox .inputuser input[id="year"]{
+    margin-left: 10px;
+    width: 50px;
+    height: 30px;
+    margin-bottom: 22px;
+    outline: none;
+}
+
+.addpage .addbox button{
+    width: 150px;
+    height: 30px;
+    margin-left: 60px;
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    background-color: rgb(117, 49, 243);
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.addpage .addbox button:hover{
+    background-color: rgb(250, 217, 33);
+    color: rgb(6, 36, 170);
+}
+
+/* --------------------------------------------------- FORGOT PAGE ------------------------------------------------------------------- */
+
+.forgotpage .forgotbox1{
+    position: absolute;
+    top: 180px;
+    left: 400px;
+    width: 600px;
+    height: 250px;
+    background: rgb(255, 255, 255);
+    box-sizing: border-box;
+    padding: 20px 40px;
+    border-radius: 10px;
+    animation: fadein 2s;
+}
+
+.forgotpage .forgotbox2{
+    position: absolute;
+    top: 180px;
+    left: 400px;
+    width: 600px;
+    height: 250px;
+    background: rgb(255, 255, 255);
+    box-sizing: border-box;
+    padding: 20px 40px;
+    border-radius: 10px;
+    animation: fadein 2s;
+}
+
+.forgotpage .keyword{
+    margin: 0;
+    width: 180px;
+    height: 150px;
+    float: left;
+    padding: 0;
+}
+
+.forgotpage .inputuser{
+    margin: 0;
+    width: 300px;
+    height: 150px;
+    float: left;
+    margin-top: 13px;
+}
+
+.forgotpage .keyword p{
+    font-weight: bold;
+    font-size: 13px;
+    text-align: right;
+    height: 35px;
+    line-height: 35px;
+    margin-bottom: 23px;
+}
+
+.forgotpage .inputuser input{
+    margin-left: 10px;
+    width: 250px;
+    height: 30px;
+    margin-bottom: 22px;
+    outline: none;
+}
+
+.forgotpage .inputuser img[id="showpass"]{
+    position: absolute;
+    z-index: 1;
+    margin-top: 11px;
+}
+
+.forgotpage .inputuser .boxinputuser{
+    position: absolute;
+    left: 450px;
+    margin-left: 10px;
+    width: 26px;
+    height: 33px;
+    margin-bottom: 22px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    z-index: 0;
+    border-left: none;
+}
+
+.forgotpage .inputuser input[id="newpassword"],.forgotpage .inputuser input[id="newrepasswd"]{
+    margin-left: 10px;
+    width: 225px;
+    height: 31px;
+    margin-bottom: 22px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-right: none;
+}
+
+.forgotpage button{
+    width: 40%;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 150px;
+    border: none;
+    outline: none;
+    background-color: rgb(117, 49, 243);
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(244, 255, 88);
+}
+
+.forgotpage button:hover{
+    background-color: rgb(250, 217, 33);
+    color: rgb(6, 36, 170);
+}
